@@ -10,8 +10,12 @@ layout: page
 navigation:
   show: true
 ---
+<<<<<<< HEAD
 - [Warned](#-Warned)
 SendGrid reviews accounts that appear to have abnormal activity in order to preserve your reputation as a sender, as well as to to prevent potential bad actors on our system from influencing the rest of our sender population. The possible states of account review are explained below:
+=======
+SendGrid reviews accounts that appear to have abnormal activity in order to preserve your reputation as a sender, as well as to prevent potential bad actors on our system from influencing the rest of our sender population. The possible states of account review are explained below:  
+>>>>>>> upstream/develop
 
 Received a suspension, warning, deactivation, or ban notice from SendGrid? We apologize for any interruption in your service. Please respond to any questions asked in the email notice. The fastest way to get your account reactivated is to respond directly to the ticket sent to your email address. In most cases, SendGrid Support cannot reactivate a suspended or banned account, so contacting them directly may delay reactivation.
 
@@ -25,6 +29,7 @@ Suspended
 {% endanchor %}
 SendGrid will accept and queue mail while the account is under review. Mail will be held until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from send will expire and will not be delivered. Mail that has already been Delivered will still be functional, including open and click tracking, as well as links redirecting properly. 
 
+<<<<<<< HEAD
 Please be aware that an account in a suspended state will continue to incur auto-renewal billing for your monthly subscription and any Marketing Campaigns contact storage.
 
 Deactivated
@@ -43,3 +48,10 @@ Additional Resources
 {% endanchor %}
 
 - [Doc Name]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+=======
+{% anchor h2 %}Banned{% endanchor %}
+All access to the account is blocked, both through SendGrid.com as well as the API. Email requests to our system will not be accepted. If an account has dedicated IP's assigned to it, they will be removed. Related sub-users will also be banned and unable to send email or access their account. _Please be aware that an account in a banned state will stop any auto-renewal billing, though you will still be charged for any overages or Marketing Campaigns contact storage during the current month._  
+  
+{% anchor h2 %}Reactivation{% endanchor %}
+When all potential issues are resolved to our satisfaction, SendGrid will reactivate your service. Once reactivated, your account will be restored and any queued messages will be delivered.
+>>>>>>> upstream/develop
