@@ -69,6 +69,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 * Clone the repo.
 * `npm install` to install build tools.
+* `bower install` to install client-side dependencies (jQuery, bootstrap)
 * `bundle install` to install required rubygems.
 * Copy `_config.sample.yml` and name it `_config.yml`
 * Set your root (if you're running locally it'll just be `/`) in `_config.yml`
