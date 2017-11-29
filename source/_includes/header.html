@@ -7,4 +7,25 @@
       </div>
   </div>
   {% include navigation.html %}
+    <!-- status page alert -->
+    <div class="alert alert-danger" id="status-alert" style="display:none;">
+      <p>
+        <i class="sg-icon sg-icon-warning"></i>
+        <span id="status-alert-name"></span>
+        <a href="#" id="status-alert-link">Read More.</a>
+        <i class="sg-icon sg-icon-x"></i>
+      </p>
+    </div>
+    <!-- /status page alert -->
+    <nav class="secondary">
+      <div class="header__container" id="account-options">
+        {{#if signed_in}}
+          <a class="logout" href="#">Log Out</a>
+        {{else}}
+          <a class="login" href="<%= SignInHelper.href(@production) %>">
+            Log In
+          </a>
+        {{/if}}
+      </div>
+    </nav>
 </div>
